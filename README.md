@@ -6,10 +6,24 @@
 ## 基本用法
 
 1. 添加Gradle依赖
+
 >     dependencies {
->         compile 'com.android.support:recyclerview-v7:latestVersion' 
->     　  compile 'com.nineoldandroids:library:2.4.0'// 记得添加nineoldandroids
->         compile 'cn.bingoogolapple:bga-refreshlayout:latestVersion@aar'
+        compile 'com.android.support:recyclerview-v7:23.0.0'
+        compile fileTree(include: ['*.jar'], dir: 'libs')
+        testCompile 'junit:junit:4.12'
+        compile 'com.android.support:appcompat-v7:23.4.0'
+        compile 'com.nineoldandroids:library:2.4.0'
+        compile 'cn.bingoogolapple:bga-banner:2.0.9@aar'
+        compile 'cn.bingoogolapple:bga-adapter:1.1.0@aar'
+        compile 'cn.bingoogolapple:bga-swipeitemlayout:1.0.4@aar'
+        compile 'cn.bingoogolapple:bga-indicator:1.0.1@aar'
+        compile 'cn.bingoogolapple:bga-refreshlayout:1.1.6@aar'
+        compile 'com.squareup.retrofit2:retrofit:2.0.2'
+        compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+        compile 'cn.pedant.sweetalert:library:1.3'//不错的alertdialog
+        compile 'com.github.bumptech.glide:glide:3.7.0'
+        compile 'com.github.bumptech.glide:glide:3.7.0'
+        compile 'com.squareup.okhttp3:logging-interceptor:3.1.2'
 >         }
 
 2. 在布局中添加BGARefreshLayout
